@@ -6,6 +6,8 @@ RUN npm install
 
 COPY . .
 
+RUN npm test
+
 EXPOSE 80
 
 CMD [ "node", "server.js" ]
